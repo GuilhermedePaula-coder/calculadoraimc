@@ -1,0 +1,97 @@
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Caixa principal */
+.box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Labels */
+form label {
+  display: block;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Inputs centralizados */
+form input {
+  width: 80%;            /* ocupa 80% da box */
+  max-width: 300px;      /* limite para não ficar gigante */
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  margin: 0 auto;        /* centraliza */
+}
+
+form input:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+/* Botão alinhado com inputs */
+form button {
+  width: 80%;            /* mesmo tamanho do input */
+  max-width: 300px;      /* mantém proporção */
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #4facfe, #0077ff);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0 auto;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 119, 255, 0.3);
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .box {
+    padding: 1.5rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+}

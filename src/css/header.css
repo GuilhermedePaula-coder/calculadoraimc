@@ -1,0 +1,14 @@
+.header {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 1.2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px 12px 0 0; /* arredonda só em cima */
+  margin: -2rem -2rem 1.5rem -2rem; /* "cola" no topo da box */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
